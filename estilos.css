@@ -1,0 +1,103 @@
+textarea{
+	width: calc(100% - 28px);
+	font-size:20px;
+	font-family:inherit;
+	height:500px;
+}
+body{
+	font-family: courier,monospace;
+}
+p,label{
+	font-size:16px;
+}
+button[type=button]{
+	width:36px;
+	height:36px;
+	font-size:20px;
+	padding:0px;
+	margin-top:4px;
+	margin-right:4px;
+	
+}
+button{
+	font-family:inherit;
+	padding:12px;
+	background-color: black;
+	color: white;
+}
+label{
+	display:block;
+	width: calc(100% - 28px);
+}
+form{
+	margin-bottom: 24px;
+}
+form>*{
+	margin-top: 24px;
+	
+}
+
+.borde{
+	border-style: solid;
+	border-radius: 6px;
+	border-color: darkgray;
+	padding:12px;
+}
+.cont_ej{
+	width:144px;
+}
+#btnsub{
+	margin-right: 4px;
+	margin-bottom: 4px;
+	margin-top: 24px;
+}
+.a_la_derecha{
+	position:relative;
+	float:right;
+	margin-right:3px;
+}
+
+.btn_ayuda{
+	border-style: solid;
+	border-color: white;
+	border-width: 2px;
+	border-radius: 6px;
+	background-color: black;
+	padding: 3px;
+	color: white;
+}
+.btn_ayuda_activo{
+	border-style: solid;
+	border-color: black;
+	border-width: 2px;
+	border-radius: 6px;
+	background-color: white;
+	padding: 3px;
+	color: black;
+}
+.btn_ayuda:hover,.btn_ayuda_activo:hover{
+	background-color:grey;
+}
+footer{
+	font-size:16px;
+	margin-bottom:120px;
+}
+@media only screen and (max-width: 600px) {
+	#botones{
+		position:relative;
+		overflow:auto;
+	}
+	textarea{
+		height:100px;
+	}
+}
+@media only screen and (min-width: 601px){
+	#botones{
+		position:sticky;
+		bottom:0px;
+		left:0px;
+		background-color:rgba(255,255,255,0.5);
+		box-shadow: 0px 0px 12px 1px;
+		overflow:auto;
+	}
+}
